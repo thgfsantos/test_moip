@@ -1,0 +1,9 @@
+{
+  "QA": {
+    "host": "https://sandbox.moip.com.br",
+    "port": 80,
+    "resource_customers": "/v2/customers",
+    "resource_orders": "/v2/orders",
+    "resource_payments":"/v2/payments"
+  }
+}
