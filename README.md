@@ -3,9 +3,13 @@ Desenvolvimento de testes automatizados utilizando a linguagem Python com as bib
 
 # Pré-requisitos
   Python >= 2.7.3
+  
   pip >= 0.9
+  
   requests >= 2.18
+  
   pytest >= 3.3.1 (compatível com a versão 2.7.3 do python)
+  
   json -- (built in)
 
 # Instalação
