@@ -3,5 +3,5 @@
 
 import pytest
 
-pytest.main(["-s", "moip2/test_payments.py", "moip2/test_customers.py", "moip2/test_orders.py"])
+pytest.main(["--disable-warnings", "test_moip/test_payments.py", "test_moip/test_customers.py", "test_moip/test_orders.py"])
 
