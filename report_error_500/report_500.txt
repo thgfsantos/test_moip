@@ -1,0 +1,62 @@
+### Relatório de Erro 550 ###
+Endpoint : Customers
+caso de testes: 
+1º - test_customer::test_create_new_customer_with_fullname_moreThan_90_caracteres
+2º - test_create_new_customer_OwnId_moreThan_65_caracteres
+Causa: Para os casos de testes acima ao inserir um valores em um campo do tipo STRING ou INT maior do que o campo permiti, o servidor retorna erro 500.
+
+Exemplo:
+1 - Erro na criação com FullName
+{
+  "ownId": "meu_id_customer",
+  "fullname": "asdfghjklmnopiuytrewqzxcvbnmwejaksjkajkdjakdjbcsaabcanscjnajkanbahy12345689uhjhjnnabbabdhda",
+  "email": "joao@email.com",
+  "birthDate": "1990-10-22",
+  "taxDocument": {
+    "type": "CPF",
+    "number": "22288866644"
+  },
+  "phone": {
+    "countryCode": "55",
+    "areaCode": "11",
+    "number": "55552266"
+  },
+  "shippingAddress": {
+    "city": "São Paulo",
+    "complement": "10",
+    "district": "Itaim Bibi",
+    "street": "Avenida Faria Lima",
+    "streetNumber": "500",
+    "zipCode": "01234000",
+    "state": "SP",
+    "country": "BRA"
+  }
+}
+
+2 - Erro na criação do OwnId
+
+{
+  "ownId": "CUS-GHJKL1234567890QWERTIUPOMNBVCXZADAJKAJ124435454JKDFIU989DSHAJD",
+  "fullname": "João Silva",
+  "email": "joao@email.com",
+  "birthDate": "1990-10-22",
+  "taxDocument": {
+    "type": "CPF",
+    "number": "22288866644"
+  },
+  "phone": {
+    "countryCode": "55",
+    "areaCode": "11",
+    "number": "55552266"
+  },
+  "shippingAddress": {
+    "city": "São Paulo",
+    "complement": "10",
+    "district": "Itaim Bibi",
+    "street": "Avenida Faria Lima",
+    "streetNumber": "500",
+    "zipCode": "01234000",
+    "state": "SP",
+    "country": "BRA"
+  }
+}
